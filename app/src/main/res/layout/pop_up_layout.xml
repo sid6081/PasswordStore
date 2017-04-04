@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@color/colorBlack">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="*Password / Pin"
+        android:gravity="center"
+        android:ems="10"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:id="@+id/passwordEditText"
+        android:layout_below="@+id/userIdEditText"
+        android:layout_alignStart="@+id/userIdEditText"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_config"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:background="@drawable/rounded_button_config"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/showPasswordCheckBox"
+        android:layout_alignStart="@+id/passwordEditText" />
+
+    <Button
+        android:text="Back"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButton"
+        android:layout_alignBaseline="@+id/addButton"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_alignEnd="@+id/passwordEditText"
+        android:background="@drawable/rounded_button_config"
+        />
+
+    <CheckBox
+        android:text="Show Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorWhite"
+        android:shadowColor="@color/colorWhite"
+        android:id="@+id/showPasswordCheckBox"
+        android:buttonTint="@color/colorWhite"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_alignStart="@+id/addButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="*User ID"
+        android:gravity="center"
+        android:ems="10"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:id="@+id/userIdEditText"
+        android:background="@drawable/edittext_config"
+        android:layout_below="@+id/nameEditText"
+        android:layout_alignStart="@+id/nameEditText"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="*Name"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/nameEditText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_config"/>
+</RelativeLayout>
